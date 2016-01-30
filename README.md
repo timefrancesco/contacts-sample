@@ -10,8 +10,9 @@ To compile it:
 4) Open the `totvs-contacts-test.xcworkspace` file in Xcode  
 5) Build and run!  
 
-Important: The app requires an internet connection to work. It downloads a list of contacts from a sandbox api service.    
+Important: The app requires an internet connection to work. It downloads a list of contacts from a sandbox api service.     
 I am using [getsandbox](https://getsandbox.com) as api service, it's really simple to set up and it took me just 5 minutes including registering to it, really!  
+Also, the login doesn't have any validation at the moment.
 
 List of libraries I used:  
 
