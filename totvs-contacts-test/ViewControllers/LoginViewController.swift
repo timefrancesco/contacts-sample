@@ -38,6 +38,7 @@ class LoginViewController: UIViewController {
     }
    
     func setupViews(){
+        //adding lines below textfield
         let usernameBottomLine = UIView(frame: CGRectMake(usernameTfield.frame.origin.x, usernameTfield.frame.origin.y + usernameTfield.frame.height, usernameTfield.frame.size.width, 0.5))
         usernameBottomLine.backgroundColor = UIColor.whiteColor()
         usernameBottomLine.opaque = true        
@@ -49,9 +50,17 @@ class LoginViewController: UIViewController {
         view.addSubview(usernameBottomLine)
         view.addSubview(passwordBottomLine)
         
+        //styling button
         loginBtn.layer.borderColor = UIColor.whiteColor().CGColor
         loginBtn.layer.borderWidth = 1
         loginBtn.layer.cornerRadius = 23
+        
+        //changing placeholder color
+        let str = NSAttributedString(string: "username", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        usernameTfield.attributedPlaceholder = str
+        
+        let str2 = NSAttributedString(string: "password", attributes: [NSForegroundColorAttributeName:UIColor.whiteColor()])
+        passwordTfiled.attributedPlaceholder = str2
     }
     
 }

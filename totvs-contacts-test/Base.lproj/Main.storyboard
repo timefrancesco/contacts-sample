@@ -147,7 +147,7 @@
                                 </constraints>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyh-9C-3AC" customClass="TKTransitionSubmitButton" customModule="totvs_contacts_test" customModuleProvider="target">
                                 <rect key="frame" x="174" y="310" width="253" height="45"/>
@@ -385,6 +385,10 @@
         <scene sceneID="gTh-vo-zcN">
             <objects>
                 <viewController id="pYI-oB-zFq" customClass="HeaderContainerView" customModule="totvs_contacts_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cPT-pB-7ED"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ien-fX-F1h"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cBQ-hJ-muY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="137"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
